@@ -13,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/bootswatch/dist/yeti/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
     <body>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
@@ -40,6 +41,7 @@
         </ul>
       </nav>
 
+      <hr>
       <section>
         <h3>About Me</h3>
         <p>
@@ -49,24 +51,47 @@
         </p>
       </section>
 
-      <section>
+      
+      <hr>
+      <section class="mb-4">
         <h3>Skills</h3>
-        <p align="center">
-          <a href="https://skillicons.dev">
-            <img src="https://skillicons.dev/icons?i=git,cs,dotnet,java,spring,gradle,firebase,html,css,js,jquery,htmx,bootstrap" />
+        <div class="d-flex flex-wrap justify-content-center">
+          <a href="https://skillicons.dev" class="p-2">
+            <img src="https://skillicons.dev/icons?i=cs,dotnet" class="img-fluid" />
           </a>
-        </p>
-
+          <a href="https://skillicons.dev" class="p-2">
+            <img src="https://skillicons.dev/icons?i=java,spring,gradle" class="img-fluid" />
+          </a>
+          <a href="https://skillicons.dev" class="p-2">
+            <img src="https://skillicons.dev/icons?i=javascript,nodejs,npm" class="img-fluid" />
+          </a>
+          <a href="https://skillicons.dev" class="p-2">
+            <img src="https://skillicons.dev/icons?i=webpack,htmx,bootstrap" class="img-fluid" />
+          </a>
+          <a href="https://skillicons.dev" class="p-2">
+            <img src="https://skillicons.dev/icons?i=html,css,git" class="img-fluid" />
+          </a>
+          <a href="https://skillicons.dev" class="p-2">
+            <img src="https://skillicons.dev/icons?i=firebase" class="img-fluid" />
+          </a>
+        </div>
+      </section>
+      <hr>
+      
+      <section class="mb-4">
         <h3>Software</h3>
-        <p align="center">
-          <a href="https://skillicons.dev">
-            <img src="https://skillicons.dev/icons?i=windows,linux,docker,vscode,visualstudio,idea,androidstudio" />
+        <div class="d-flex flex-wrap justify-content-center">
+          <a href="https://skillicons.dev" class="p-2">
+            <img src="https://skillicons.dev/icons?i=windows,linux,docker" class="img-fluid" />
           </a>
-        </p>
-
+          <a href="https://skillicons.dev" class="p-2">
+            <img src="https://skillicons.dev/icons?i=vscode,visualstudio,androidstudio" class="img-fluid" />
+          </a>
+        </div>
       </section>
 
-      <section>
+      <hr>
+      <section class="mb-4">
         <h3>Portfolio</h3>
         <div class="row">
           <div class="col-md-4">
@@ -105,6 +130,8 @@
       <footer>
         <p>&copy; 2024 Levi Huff</p>
       </footer>
+
+      
 
     </div>
   </body>
