@@ -16,10 +16,8 @@ git clone https://github.com/lh1207/lh1207.github.io
 cd lh1207.github.io
 ```
 
-3. Install the necessary packages:
-```bash
-npm i
-```
+3. Open Live Preview in VSCode or Webstorm
+- Or host on web server
 
 After these steps, you can start the local development server with `npm start` (if your project is set up this way).
 
