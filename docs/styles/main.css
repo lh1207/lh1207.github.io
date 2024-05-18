@@ -24,15 +24,25 @@
   100% {opacity: 1;}
 }
 
+.navbar-nav > .profile-picture {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.profile-picture {
+  margin-top: 10px;
+}
+
+.typed-cursor {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 header {
   animation: fadeIn 2s ease-in-out;
 }
 
 img {
-  animation: scaleUp 2s ease-in-out;
-}
-
-nav {
   animation: scaleUp 2s ease-in-out;
 }
 
