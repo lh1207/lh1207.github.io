@@ -1,28 +1,40 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Levi Huff - Aspiring IT Professional</title>
     <link rel="icon" type="image/x-icon" href="/docs/assets/favicon.ico">
-    <meta name="description" content="">
+    <meta name="description" content="Homepage of Levi Huff's website.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/bootswatch/dist/yeti/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+      
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="/docs/index.html">Levi Huff</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#About">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Software">Software</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Portfolio">Portfolio</a></li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="mailto:huffli@mail.uc.edu"><b><i>Hire Me!</i></b></a></li>      
+        </ul> 
+      </div>
+    </nav>
 
     <div class="container text-center">
       <!-- Profile Picture Bootstrap -->
       <div class="row justify-content-center">
-        <div class="col-md-4">
+        <div class="col-md-4 profile-picture">
           <img src="assets/profile.jpg" alt="Profile Picture" class="img-fluid rounded-circle">
         </div>
       </div>
@@ -30,19 +42,9 @@
       <header id="Home">
         <h1>Levi Huff</h1>
         <h5>he/they</h5>
-        <h2>Aspiring IT Professional</h2>
+        <h2><span id="profession"></span></h2>
       </header>
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-primary justify-content-center">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link text-white" href="#Home">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#About">About</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#Skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#Software">Software</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#Portfolio">Portfolio</a></li>
-        </ul>
-      </nav>
-
+      
       <hr>
       <section id="About">
         <h3>About Me</h3>
@@ -133,7 +135,19 @@
         <p>&copy; 2024 Levi Huff</p>
       </footer>
 
-      
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+      <script>
+        var typed = new Typed('#profession', {
+          strings: ["Aspiring IT Professional", "Future Software Developer", "Tech Enthusiast"],
+          typeSpeed: 50,
+          backSpeed: 50,
+          loop: true,
+        });
+      </script>
 
     </div>
   </body>
